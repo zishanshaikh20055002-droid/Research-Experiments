@@ -1,0 +1,128 @@
+{
+  "benchmark": "Exploratory leave-one-bearing-out baseline benchmark on the frozen processed XJTU-SY feature dataset",
+  "sequence_definition": "Ten recordings, stride 1; target is normalized RUL at the final recording.",
+  "feature_count": 32,
+  "feature_names": [
+    "h_mean",
+    "h_std",
+    "h_rms",
+    "h_peak_abs",
+    "h_peak_to_peak",
+    "h_crest_factor",
+    "h_kurtosis",
+    "h_skewness",
+    "h_dominant_freq_hz",
+    "h_spectral_centroid_hz",
+    "h_spectral_bandwidth_hz",
+    "h_spectral_rms",
+    "h_band_energy_ratio_0_1000hz",
+    "h_band_energy_ratio_1000_3000hz",
+    "h_band_energy_ratio_3000_6000hz",
+    "h_band_energy_ratio_6000_12800hz",
+    "v_mean",
+    "v_std",
+    "v_rms",
+    "v_peak_abs",
+    "v_peak_to_peak",
+    "v_crest_factor",
+    "v_kurtosis",
+    "v_skewness",
+    "v_dominant_freq_hz",
+    "v_spectral_centroid_hz",
+    "v_spectral_bandwidth_hz",
+    "v_spectral_rms",
+    "v_band_energy_ratio_0_1000hz",
+    "v_band_energy_ratio_1000_3000hz",
+    "v_band_energy_ratio_3000_6000hz",
+    "v_band_energy_ratio_6000_12800hz"
+  ],
+  "random_seed": 42,
+  "models": {
+    "training_mean": {
+      "input": "none",
+      "description": "Constant mean of training-fold sequence targets only.",
+      "parameters": {
+        "ridge_alpha": null,
+        "n_estimators": null,
+        "min_samples_leaf": null,
+        "hgb_learning_rate": null,
+        "hgb_max_iter": null,
+        "hgb_max_leaf_nodes": null,
+        "hgb_l2_regularization": null
+      }
+    },
+    "ridge_final_step": {
+      "input": "32 final-step standardized features",
+      "parameters": {
+        "ridge_alpha": 1.0,
+        "n_estimators": null,
+        "min_samples_leaf": null,
+        "hgb_learning_rate": null,
+        "hgb_max_iter": null,
+        "hgb_max_leaf_nodes": null,
+        "hgb_l2_regularization": null
+      }
+    },
+    "extra_trees_final_step": {
+      "input": "32 final-step features",
+      "parameters": {
+        "ridge_alpha": null,
+        "n_estimators": 150,
+        "min_samples_leaf": 2,
+        "hgb_learning_rate": null,
+        "hgb_max_iter": null,
+        "hgb_max_leaf_nodes": null,
+        "hgb_l2_regularization": null
+      }
+    },
+    "random_forest_final_step": {
+      "input": "32 final-step features",
+      "parameters": {
+        "ridge_alpha": null,
+        "n_estimators": 150,
+        "min_samples_leaf": 2,
+        "hgb_learning_rate": null,
+        "hgb_max_iter": null,
+        "hgb_max_leaf_nodes": null,
+        "hgb_l2_regularization": null
+      }
+    },
+    "hist_gradient_boosting_final_step": {
+      "input": "32 final-step features",
+      "parameters": {
+        "ridge_alpha": null,
+        "n_estimators": null,
+        "min_samples_leaf": null,
+        "hgb_learning_rate": 0.05,
+        "hgb_max_iter": 150,
+        "hgb_max_leaf_nodes": 15,
+        "hgb_l2_regularization": 1.0
+      }
+    },
+    "extra_trees_flattened_window": {
+      "input": "flattened 10 x 32 chronological window (320 values)",
+      "parameters": {
+        "ridge_alpha": null,
+        "n_estimators": 150,
+        "min_samples_leaf": 2,
+        "hgb_learning_rate": null,
+        "hgb_max_iter": null,
+        "hgb_max_leaf_nodes": null,
+        "hgb_l2_regularization": null
+      }
+    },
+    "recording_index_ridge_diagnostic": {
+      "input": "observable original recording index at sequence end only",
+      "description": "Diagnostic only; no normalized age, total length, terminal index, or future observation is supplied.",
+      "parameters": {
+        "ridge_alpha": 1.0,
+        "n_estimators": null,
+        "min_samples_leaf": null,
+        "hgb_learning_rate": null,
+        "hgb_max_iter": null,
+        "hgb_max_leaf_nodes": null,
+        "hgb_l2_regularization": null
+      }
+    }
+  }
+}

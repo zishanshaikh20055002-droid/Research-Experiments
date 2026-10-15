@@ -1,0 +1,55 @@
+{
+  "status": "completed",
+  "post_hoc_exploratory": true,
+  "interpreter": "D:\\venvs\\xjtu-baselines\\Scripts\\python.exe",
+  "versions": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.1"
+  },
+  "inputs": {
+    "npz": "<PROJECT_ROOT>\\data\\processed\\xjtu_features.npz",
+    "metadata": "<PROJECT_ROOT>\\data\\processed\\xjtu_features_metadata.csv.gz",
+    "source_lobo_manifest": "<PROJECT_ROOT>\\baseline_benchmark_2026-10-13\\lobo_run_02\\fold_manifest.csv"
+  },
+  "configuration": {
+    "hgb": {
+      "seed": 42,
+      "learning_rate": 0.05,
+      "max_iter": 150,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 1.0
+    },
+    "extra_trees": {
+      "seeds": [
+        42,
+        123,
+        2024
+      ],
+      "n_estimators": 150,
+      "min_samples_leaf": 2,
+      "max_features": 1.0
+    },
+    "bootstrap": {
+      "seed": 20261014,
+      "replicates": 10000
+    }
+  },
+  "elapsed_seconds": 754.8225290999999,
+  "postprocessing": "postprocess_saved_outputs.py added deterministic mean-across-fixed-seed summary rows and exact per-bearing source-index sequences without fitting any models.",
+  "outputs": [
+    "INDEX_FEATURE_ABLATION_REPORT.md",
+    "metrics_by_model.csv",
+    "metrics_by_bearing.csv",
+    "paired_bearing_differences.csv",
+    "predictions_lobo.csv",
+    "fold_extrapolation_diagnostics.csv",
+    "feature_time_leakage_audit.csv",
+    "run_manifest.json",
+    "DATA_VALIDATION_REPORT.md",
+    "index_feature_ablation.py",
+    "postprocess_saved_outputs.py"
+  ]
+}

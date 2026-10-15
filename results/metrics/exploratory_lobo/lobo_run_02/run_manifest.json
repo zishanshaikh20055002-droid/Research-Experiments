@@ -1,0 +1,42 @@
+{
+  "status": "completed",
+  "started_and_finished_in_one_invocation": true,
+  "project": "<PROJECT_ROOT>",
+  "run_directory": "<PROJECT_ROOT>\\baseline_benchmark_2026-10-13\\lobo_run_02",
+  "inputs": {
+    "npz": "<PROJECT_ROOT>\\data\\processed\\xjtu_features.npz",
+    "metadata": "<PROJECT_ROOT>\\data\\processed\\xjtu_features_metadata.csv.gz"
+  },
+  "environment": {
+    "python_executable": "D:\\venvs\\xjtu-baselines\\Scripts\\python.exe",
+    "python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "scikit_learn": "1.9.1"
+  },
+  "protocol": {
+    "type": "leave-one-bearing-out",
+    "n_bearings": 15,
+    "n_windows": 9080,
+    "sequence_length": 10,
+    "seed": 42
+  },
+  "elapsed_seconds": 163.51205710000022,
+  "historical_artifacts_read_only": [
+    "<PROJECT_ROOT>\\audit_2026-10-13",
+    "<PROJECT_ROOT>\\baseline_benchmark_2026-10-13"
+  ],
+  "outputs": [
+    "BASELINE_BENCHMARK_REPORT.md",
+    "baseline_metrics_by_model.csv",
+    "baseline_metrics_by_bearing.csv",
+    "baseline_predictions_lobo.csv",
+    "fold_manifest.csv",
+    "model_configurations.json",
+    "run_manifest.json",
+    "DATA_VALIDATION_REPORT.md",
+    "baseline_benchmark.py"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "bootstrap_seed": 20261015,
+  "bootstrap_replicates": 1000,
+  "bootstrap_unit": "whole test bearing",
+  "test_bearings": [
+    "Bearing1_3",
+    "Bearing1_4",
+    "Bearing1_5",
+    "Bearing2_3",
+    "Bearing2_4",
+    "Bearing2_5",
+    "Bearing3_3",
+    "Bearing3_4",
+    "Bearing3_5"
+  ],
+  "isotonic": "fit separately to each bearing's prediction vs end_position; increasing=False; no true labels used",
+  "m1_validation": {
+    "raw_pooled_mae": 0.30698844301244355,
+    "isotonic_pooled_mae": 0.2988582895149546
+  },
+  "status": "exploratory; fixed test set previously inspected"
+}

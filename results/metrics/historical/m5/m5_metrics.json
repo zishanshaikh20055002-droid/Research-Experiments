@@ -1,0 +1,157 @@
+{
+  "rul": {
+    "mae": 0.2881490593696559,
+    "rmse": 0.3609679467267377,
+    "r2": -0.624930396742098,
+    "prediction_min": 0.012952810153365135,
+    "prediction_max": 0.8997766971588135,
+    "predictions_outside_0_1": 0,
+    "mean_prediction_bias_pred_minus_true": 0.15152496099472046,
+    "mean_true_rul": 0.488060861825943,
+    "mean_predicted_rul": 0.6395857930183411
+  },
+  "fault": {
+    "accuracy": 0.1415929203539823,
+    "macro_precision": 0.043575980524951936,
+    "macro_recall": 0.19234103501564206,
+    "macro_f1": 0.07105328934213158,
+    "per_class": {
+      "Outer": {
+        "precision": 0.16415163783584835,
+        "recall": 0.7228525121555915,
+        "f1": 0.26754649070185965,
+        "support": 617
+      },
+      "Inner": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1867
+      },
+      "Cage": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 637
+      },
+      "Mixed": {
+        "precision": 0.01015228426395939,
+        "recall": 0.046511627906976744,
+        "f1": 0.016666666666666666,
+        "support": 43
+      }
+    },
+    "confusion_matrix": [
+      [
+        446,
+        10,
+        0,
+        161
+      ],
+      [
+        1836,
+        0,
+        0,
+        31
+      ],
+      [
+        394,
+        240,
+        0,
+        3
+      ],
+      [
+        41,
+        0,
+        0,
+        2
+      ]
+    ]
+  },
+  "monotonicity": {
+    "violation_rate": 0.49413629160063394,
+    "mean_violation_magnitude": 0.01577640248067089,
+    "violation_count": 1559,
+    "adjacent_pairs": 3155
+  },
+  "per_condition_rul": [
+    {
+      "condition": "35Hz12kN",
+      "sequence_count": 305,
+      "mae": 0.17240670853462375,
+      "rmse": 0.2065844421300552,
+      "r2": 0.4099767180477982,
+      "prediction_min": 0.013386216945946217,
+      "prediction_max": 0.8385704755783081,
+      "predictions_outside_0_1": 0
+    },
+    {
+      "condition": "37.5Hz11kN",
+      "sequence_count": 887,
+      "mae": 0.17140531045880292,
+      "rmse": 0.20701018736559898,
+      "r2": 0.4621763258689836,
+      "prediction_min": 0.012952810153365135,
+      "prediction_max": 0.7525189518928528,
+      "predictions_outside_0_1": 0
+    },
+    {
+      "condition": "40Hz10kN",
+      "sequence_count": 1972,
+      "mae": 0.35856139318741015,
+      "rmse": 0.42799777683914597,
+      "r2": -1.248290694397872,
+      "prediction_min": 0.019876031205058098,
+      "prediction_max": 0.8997766971588135,
+      "predictions_outside_0_1": 0
+    }
+  ],
+  "fault_distribution": {
+    "train": {
+      "bearing_counts": {
+        "Outer": 3,
+        "Inner": 1,
+        "Cage": 0,
+        "Mixed": 1
+      },
+      "sequence_counts": {
+        "Outer": 2795,
+        "Inner": 482,
+        "Cage": 0,
+        "Mixed": 2487
+      }
+    },
+    "validation": {
+      "bearing_counts": {
+        "Outer": 1,
+        "Inner": 0,
+        "Cage": 0,
+        "Mixed": 0
+      },
+      "sequence_counts": {
+        "Outer": 152,
+        "Inner": 0,
+        "Cage": 0,
+        "Mixed": 0
+      }
+    },
+    "test": {
+      "bearing_counts": {
+        "Outer": 4,
+        "Inner": 2,
+        "Cage": 2,
+        "Mixed": 1
+      },
+      "sequence_counts": {
+        "Outer": 617,
+        "Inner": 1867,
+        "Cage": 637,
+        "Mixed": 43
+      }
+    }
+  },
+  "learned_uncertainty": {
+    "s_R": -1.9351038932800293,
+    "s_F": -1.9200714826583862
+  }
+}

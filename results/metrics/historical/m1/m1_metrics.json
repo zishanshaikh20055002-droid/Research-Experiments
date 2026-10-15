@@ -1,0 +1,9 @@
+{
+  "mae": 0.306988443284878,
+  "rmse": 0.4012790368197732,
+  "r2": -1.0081235508286865,
+  "prediction_min": 0.017843589186668396,
+  "prediction_max": 0.9696648120880127,
+  "predictions_outside_0_1": 0,
+  "test_sequence_count": 3164
+}

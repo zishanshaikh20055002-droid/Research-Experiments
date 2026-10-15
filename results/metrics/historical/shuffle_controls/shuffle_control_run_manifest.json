@@ -1,0 +1,52 @@
+{
+  "status": "blocked_before_training",
+  "purpose": "Exploratory matched-batching sensitivity analysis on previously inspected test data",
+  "planned_runs": [
+    {"model": "M2-unshuffled", "seed": 42},
+    {"model": "M2-unshuffled", "seed": 123},
+    {"model": "M2-unshuffled", "seed": 2024},
+    {"model": "M4-unshuffled", "seed": 42},
+    {"model": "M4-unshuffled", "seed": 123},
+    {"model": "M4-unshuffled", "seed": 2024}
+  ],
+  "completed_runs": [],
+  "stop_reason": "Training did not start because importing installed PyTorch failed with Windows Application Control WinError 4551 while loading torch\\lib\\c10.dll. The bundled Codex Python runtime has no torch module. No packages were installed and no policy workaround was attempted.",
+  "configuration_audit": {
+    "final_entry_points": {
+      "M2_M3_M5": "research/xjtu_physics_mtl/scripts/run_multiseed.py",
+      "M4": "research/xjtu_physics_mtl/scripts/run_m4_multiseed.py (delegates to run_multiseed.run_multi)"
+    },
+    "source_sha256": {
+      "run_multiseed.py": "8489139E46A3AAF795E4BB50A4F863FC7C89081D8A97D1EF46D9CB227E6AA5B2",
+      "run_m4_multiseed.py": "ABD7B49F18F5B4646884C597F563603DAA49386B09B2B11F457B7BD235D7DF82",
+      "models.py": "DAC6AA1FC6E57C37D30539C1C23BE822977EA8F4ED52B4B5ECFE9E448CEABEA5",
+      "dataset.py": "8008A76AE752B3D6BC8A68D698D673E7395F9E892A1C31083D3DAD32A505FE"
+    },
+    "seeds": [42, 123, 2024],
+    "shared_architecture": "32 inputs; one-layer bidirectional LSTM, hidden size 64 each direction; shared 128-dimensional final-step representation; RUL head Linear(128,64)-ReLU-Linear(64,1)-Sigmoid; fault head Linear(128,64)-ReLU-Linear(64,4)",
+    "optimizer": "Adam, learning rate 0.001",
+    "batch_size": 32,
+    "sequence": {"length": 10, "stride": 1, "target": "RUL at final sequence timestep"},
+    "stopping": "Maximum 40 epochs; patience 8; gradient clipping 1.0; best checkpoint selected by validation total loss with improvement threshold 1e-8",
+    "fold": {
+      "train": ["Bearing1_1", "Bearing1_2", "Bearing2_1", "Bearing3_1", "Bearing3_2"],
+      "validation": ["Bearing2_2"],
+      "test": ["Bearing1_3", "Bearing1_4", "Bearing1_5", "Bearing2_3", "Bearing2_4", "Bearing2_5", "Bearing3_3", "Bearing3_4", "Bearing3_5"]
+    },
+    "scaler": "StandardScaler fit on recordings from the five training bearings only, then applied to validation and test",
+    "loader_shuffle": {
+      "original_M2": "training true; validation and test false",
+      "original_M3": "training false; validation and test false",
+      "original_M4": "training true; validation and test false",
+      "original_M5": "training false; validation and test false",
+      "controls": "training false; validation and test false"
+    },
+    "objectives": {
+      "M2_and_M2_unshuffled": "MSE(RUL) + CrossEntropy(fault); no monotonicity term",
+      "M3": "MSE(RUL) + CrossEntropy(fault) + 0.1 * minibatch-local monotonicity loss",
+      "M4_and_M4_unshuffled": "exp(-s_R)*MSE(RUL) + s_R + exp(-s_F)*CrossEntropy(fault) + s_F; no monotonicity term",
+      "M5": "M4 adaptive objective + 0.1 * minibatch-local monotonicity loss"
+    },
+    "control_isolation": "The prepared runner reuses run_multiseed.run_multi and overrides only a true training-loader shuffle argument to false. Validation/test loaders remain false. No model or training configuration source was edited."
+  }
+}

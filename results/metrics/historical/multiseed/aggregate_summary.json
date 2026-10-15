@@ -1,0 +1,10 @@
+{
+  "best_mean_mae": "M3",
+  "best_mean_rmse": "M3",
+  "best_mean_r2": "M3",
+  "best_mean_fault_macro_f1": "M3",
+  "lowest_mean_monotonicity_violation": "M1",
+  "m3_consistently_beats_m1_mae": true,
+  "m3_consistently_beats_m1_rmse": true,
+  "m5_consistently_beats_m3_mae": false
+}

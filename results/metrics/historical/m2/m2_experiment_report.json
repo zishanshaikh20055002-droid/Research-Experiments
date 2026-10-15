@@ -1,0 +1,301 @@
+{
+  "experiment": "M2",
+  "architecture": {
+    "shared_encoder": "BiLSTM hidden_size=64 num_layers=1 bidirectional=True",
+    "shared_representation_dim": 128,
+    "rul_head": "Linear(128,64) -> ReLU -> Linear(64,1) -> Sigmoid",
+    "fault_head": "Linear(128,64) -> ReLU -> Linear(64,4)",
+    "loss": "MSELoss + CrossEntropyLoss"
+  },
+  "hyperparameters": {
+    "experiment": "M2",
+    "seed": 42,
+    "sequence_length": 10,
+    "stride": 1,
+    "hidden_size": 64,
+    "num_layers": 1,
+    "dropout": 0.0,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "max_epochs": 100,
+    "patience": 15,
+    "grad_clip_norm": 1.0,
+    "selected_validation_bearing": "Bearing2_2",
+    "num_workers": 0
+  },
+  "sequence_counts": {
+    "train": 5764,
+    "validation": 152,
+    "test": 3164
+  },
+  "fault_distribution": {
+    "train": {
+      "bearing_counts": {
+        "Outer": 3,
+        "Inner": 1,
+        "Cage": 0,
+        "Mixed": 1
+      },
+      "sequence_counts": {
+        "Outer": 2795,
+        "Inner": 482,
+        "Cage": 0,
+        "Mixed": 2487
+      }
+    },
+    "validation": {
+      "bearing_counts": {
+        "Outer": 1,
+        "Inner": 0,
+        "Cage": 0,
+        "Mixed": 0
+      },
+      "sequence_counts": {
+        "Outer": 152,
+        "Inner": 0,
+        "Cage": 0,
+        "Mixed": 0
+      }
+    },
+    "test": {
+      "bearing_counts": {
+        "Outer": 4,
+        "Inner": 2,
+        "Cage": 2,
+        "Mixed": 1
+      },
+      "sequence_counts": {
+        "Outer": 617,
+        "Inner": 1867,
+        "Cage": 637,
+        "Mixed": 43
+      }
+    }
+  },
+  "rul_metrics": {
+    "mae": 0.3137107426063325,
+    "rmse": 0.3932937344852861,
+    "r2": -0.9289969468171038,
+    "prediction_min": 0.01590534672141075,
+    "prediction_max": 0.9829636812210083,
+    "predictions_outside_0_1": 0,
+    "mean_prediction_bias_pred_minus_true": 0.20742547512054443,
+    "test_sequence_count": 3164
+  },
+  "fault_metrics": {
+    "accuracy": 0.16182048040455121,
+    "macro_precision": 0.08593170161394732,
+    "macro_recall": 0.2469107547422014,
+    "macro_f1": 0.11245001671283134,
+    "per_class": {
+      "Outer": {
+        "precision": 0.18164213787761424,
+        "recall": 0.7601296596434359,
+        "f1": 0.29321663019693656,
+        "support": 617
+      },
+      "Inner": {
+        "precision": 0.07024793388429752,
+        "recall": 0.01821103374397429,
+        "f1": 0.0289238621863037,
+        "support": 1867
+      },
+      "Cage": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 637
+      },
+      "Mixed": {
+        "precision": 0.09183673469387756,
+        "recall": 0.20930232558139536,
+        "f1": 0.1276595744680851,
+        "support": 43
+      }
+    },
+    "confusion_matrix": [
+      [
+        469,
+        94,
+        0,
+        54
+      ],
+      [
+        1798,
+        34,
+        0,
+        35
+      ],
+      [
+        281,
+        356,
+        0,
+        0
+      ],
+      [
+        34,
+        0,
+        0,
+        9
+      ]
+    ]
+  },
+  "per_condition_rul_metrics": [
+    {
+      "condition": "35Hz12kN",
+      "sequence_count": 305,
+      "mae": 0.1265777557996697,
+      "rmse": 0.17589945130937182,
+      "r2": 0.5722373170194478,
+      "prediction_min": 0.019830793142318726,
+      "prediction_max": 0.8846293091773987,
+      "predictions_outside_0_1": 0
+    },
+    {
+      "condition": "37.5Hz11kN",
+      "sequence_count": 887,
+      "mae": 0.18364381914451222,
+      "rmse": 0.2370138531616812,
+      "r2": 0.2949759373831987,
+      "prediction_min": 0.01590534672141075,
+      "prediction_max": 0.9671427011489868,
+      "predictions_outside_0_1": 0
+    },
+    {
+      "condition": "40Hz10kN",
+      "sequence_count": 1972,
+      "mae": 0.4011574576604232,
+      "rmse": 0.46703869578890206,
+      "r2": -1.6771651713075255,
+      "prediction_min": 0.036563578993082047,
+      "prediction_max": 0.9829636812210083,
+      "predictions_outside_0_1": 0
+    }
+  ],
+  "per_bearing_rul_metrics": [
+    {
+      "bearing_id": "Bearing1_3",
+      "sequence_count": 149,
+      "mae": 0.14900088985294305,
+      "rmse": 0.20226698150442832,
+      "r2": 0.4548982730872707,
+      "prediction_min": 0.059911228716373444,
+      "prediction_max": 0.8657287955284119,
+      "predictions_outside_0_1": 0,
+      "condition": "35Hz12kN"
+    },
+    {
+      "bearing_id": "Bearing1_4",
+      "sequence_count": 113,
+      "mae": 0.08319307604095841,
+      "rmse": 0.10387682158743773,
+      "r2": 0.8515205271099733,
+      "prediction_min": 0.12699061632156372,
+      "prediction_max": 0.8846293091773987,
+      "predictions_outside_0_1": 0,
+      "condition": "35Hz12kN"
+    },
+    {
+      "bearing_id": "Bearing1_5",
+      "sequence_count": 43,
+      "mae": 0.16288989158563835,
+      "rmse": 0.2221300586852409,
+      "r2": 0.16663688723713244,
+      "prediction_min": 0.019830793142318726,
+      "prediction_max": 0.8668456077575684,
+      "predictions_outside_0_1": 0,
+      "condition": "35Hz12kN"
+    },
+    {
+      "bearing_id": "Bearing2_3",
+      "sequence_count": 524,
+      "mae": 0.19411688117543235,
+      "rmse": 0.2590595265219807,
+      "r2": 0.16987660597581966,
+      "prediction_min": 0.03076198138296604,
+      "prediction_max": 0.9421501159667969,
+      "predictions_outside_0_1": 0,
+      "condition": "37.5Hz11kN"
+    },
+    {
+      "bearing_id": "Bearing2_4",
+      "sequence_count": 33,
+      "mae": 0.21806381778283554,
+      "rmse": 0.2838320514651727,
+      "r2": -0.4936296869014136,
+      "prediction_min": 0.031259819865226746,
+      "prediction_max": 0.9038490653038025,
+      "predictions_outside_0_1": 0,
+      "condition": "37.5Hz11kN"
+    },
+    {
+      "bearing_id": "Bearing2_5",
+      "sequence_count": 330,
+      "mae": 0.16357186623764308,
+      "rmse": 0.19071336101254213,
+      "r2": 0.5421186075842628,
+      "prediction_min": 0.01590534672141075,
+      "prediction_max": 0.9671427011489868,
+      "predictions_outside_0_1": 0,
+      "condition": "37.5Hz11kN"
+    },
+    {
+      "bearing_id": "Bearing3_3",
+      "sequence_count": 362,
+      "mae": 0.42898974850907595,
+      "rmse": 0.5032539292156647,
+      "r2": -2.1750108618589183,
+      "prediction_min": 0.04621850699186325,
+      "prediction_max": 0.973115861415863,
+      "predictions_outside_0_1": 0,
+      "condition": "40Hz10kN"
+    },
+    {
+      "bearing_id": "Bearing3_4",
+      "sequence_count": 1505,
+      "mae": 0.39935337043285335,
+      "rmse": 0.4632320415312492,
+      "r2": -1.6024564915173984,
+      "prediction_min": 0.1336154043674469,
+      "prediction_max": 0.9829636812210083,
+      "predictions_outside_0_1": 0,
+      "condition": "40Hz10kN"
+    },
+    {
+      "bearing_id": "Bearing3_5",
+      "sequence_count": 105,
+      "mae": 0.3310609051869029,
+      "rmse": 0.3843636842859484,
+      "r2": -1.0534475839872548,
+      "prediction_min": 0.036563578993082047,
+      "prediction_max": 0.7018858194351196,
+      "predictions_outside_0_1": 0,
+      "condition": "40Hz10kN"
+    }
+  ],
+  "training_time_seconds": 132.16958779999914,
+  "epochs_completed": 21,
+  "best_validation_total_loss": 0.05608684059820677,
+  "comparison_with_m1": {
+    "m1": {
+      "mae": 0.306988,
+      "rmse": 0.401279,
+      "r2": -1.008124
+    },
+    "m2": {
+      "mae": 0.3137107426063325,
+      "rmse": 0.3932937344852861,
+      "r2": -0.9289969468171038
+    },
+    "delta_m2_minus_m1": {
+      "mae": 0.0067227426063325435,
+      "rmse": -0.007985265514713902,
+      "r2": 0.07912705318289626
+    }
+  },
+  "m2_improves_rul_vs_m1": false,
+  "warnings": [
+    "Bearing3_4: missing numeric CSV indices [1105]; existing files are kept in numeric order.",
+    "CUDA is not available to PyTorch; M2 trained on CPU."
+  ]
+}

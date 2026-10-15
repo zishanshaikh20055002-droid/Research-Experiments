@@ -1,0 +1,47 @@
+{
+  "config": {
+    "experiment": "M2",
+    "seed": 42,
+    "sequence_length": 10,
+    "stride": 1,
+    "hidden_size": 64,
+    "num_layers": 1,
+    "dropout": 0.0,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "max_epochs": 100,
+    "patience": 15,
+    "grad_clip_norm": 1.0,
+    "selected_validation_bearing": "Bearing2_2",
+    "num_workers": 0
+  },
+  "torch": {
+    "torch_version": "2.14.1+cpu",
+    "cuda_available": false,
+    "cuda_device_count": 0,
+    "devices": [],
+    "nvidia_smi": "NVIDIA GeForce RTX 3050 A Laptop GPU, 4094, 610.62"
+  },
+  "fold": {
+    "name": "val_Bearing2_2",
+    "train_bearings": [
+      "Bearing1_1",
+      "Bearing1_2",
+      "Bearing2_1",
+      "Bearing3_1",
+      "Bearing3_2"
+    ],
+    "validation_bearing": "Bearing2_2",
+    "test_bearings": [
+      "Bearing1_3",
+      "Bearing1_4",
+      "Bearing1_5",
+      "Bearing2_3",
+      "Bearing2_4",
+      "Bearing2_5",
+      "Bearing3_3",
+      "Bearing3_4",
+      "Bearing3_5"
+    ]
+  }
+}

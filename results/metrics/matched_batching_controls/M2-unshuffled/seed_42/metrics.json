@@ -1,0 +1,77 @@
+{
+  "model": "M2",
+  "seed": 42,
+  "best_epoch": 8,
+  "best_validation_loss": 0.10192562835781198,
+  "training_time_seconds": 29.749666476000016,
+  "mae": 0.27783850736911797,
+  "rmse": 0.35280341775125057,
+  "r2": -0.552254944988356,
+  "prediction_min": 0.020659279078245163,
+  "prediction_max": 0.8884090781211853,
+  "predictions_outside_0_1": 0,
+  "mean_prediction_bias_pred_minus_true": 0.14031007885932922,
+  "fault_accuracy": 0.143173198482933,
+  "fault_macro_precision": 0.0476247428148711,
+  "fault_macro_recall": 0.21032198652637796,
+  "fault_macro_f1": 0.07625496407351201,
+  "fault_per_class": {
+    "Outer": {
+      "precision": 0.16427783902976847,
+      "recall": 0.7244732576985413,
+      "f1": 0.2678250449370881,
+      "support": 617
+    },
+    "Inner": {
+      "precision": 0.004761904761904762,
+      "recall": 0.0005356186395286556,
+      "f1": 0.0009629272989889263,
+      "support": 1867
+    },
+    "Cage": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 637
+    },
+    "Mixed": {
+      "precision": 0.02145922746781116,
+      "recall": 0.11627906976744186,
+      "f1": 0.036231884057971016,
+      "support": 43
+    }
+  },
+  "mono_violation_rate": 0.4884310618066561,
+  "mono_mean_violation_magnitude": 0.014432631480150374,
+  "mono_violating_transitions": 1541,
+  "mono_valid_adjacent_transitions": 3155,
+  "per_condition": [
+    {
+      "condition": "35Hz12kN",
+      "mae": 0.14832836082663203,
+      "rmse": 0.18644914153473496,
+      "r2": 0.5193878986435189,
+      "prediction_min": 0.028467701748013496,
+      "prediction_max": 0.8727622032165527,
+      "predictions_outside_0_1": 0
+    },
+    {
+      "condition": "37.5Hz11kN",
+      "mae": 0.173902445045177,
+      "rmse": 0.211101404869115,
+      "r2": 0.4407078479010216,
+      "prediction_min": 0.027824021875858307,
+      "prediction_max": 0.736299455165863,
+      "predictions_outside_0_1": 0
+    },
+    {
+      "condition": "40Hz10kN",
+      "mae": 0.3446193805825023,
+      "rmse": 0.4174763487493485,
+      "r2": -1.1391103526999609,
+      "prediction_min": 0.020659279078245163,
+      "prediction_max": 0.8884090781211853,
+      "predictions_outside_0_1": 0
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "model": "M4",
+  "seed": 42,
+  "best_epoch": 21,
+  "best_validation_loss": -6.413559637571636,
+  "training_time_seconds": 56.46939035599996,
+  "mae": 0.3216073049785962,
+  "rmse": 0.4043968045672073,
+  "r2": -1.0394493086480399,
+  "prediction_min": 0.0074639455415308475,
+  "prediction_max": 0.9601235389709473,
+  "predictions_outside_0_1": 0,
+  "mean_prediction_bias_pred_minus_true": 0.18129225075244904,
+  "fault_accuracy": 0.15518331226295828,
+  "fault_macro_precision": 0.04609463011641007,
+  "fault_macro_recall": 0.19894651539708266,
+  "fault_macro_f1": 0.07484756097560975,
+  "fault_per_class": {
+    "Outer": {
+      "precision": 0.18437852046564027,
+      "recall": 0.7957860615883307,
+      "f1": 0.299390243902439,
+      "support": 617
+    },
+    "Inner": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 1867
+    },
+    "Cage": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 637
+    },
+    "Mixed": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 43
+    }
+  },
+  "mono_violation_rate": 0.48272583201267827,
+  "mono_mean_violation_magnitude": 0.017275012206794966,
+  "mono_violating_transitions": 1523,
+  "mono_valid_adjacent_transitions": 3155,
+  "per_condition": [
+    {
+      "condition": "35Hz12kN",
+      "mae": 0.16907738124585298,
+      "rmse": 0.2091820041732603,
+      "r2": 0.39504570439610287,
+      "prediction_min": 0.0074639455415308475,
+      "prediction_max": 0.9330833554267883,
+      "predictions_outside_0_1": 0
+    },
+    {
+      "condition": "37.5Hz11kN",
+      "mae": 0.18023528798489613,
+      "rmse": 0.2324880452118126,
+      "r2": 0.3216439070184506,
+      "prediction_min": 0.009316682815551758,
+      "prediction_max": 0.9361575245857239,
+      "predictions_outside_0_1": 0
+    },
+    {
+      "condition": "40Hz10kN",
+      "mae": 0.40878712537002554,
+      "rmse": 0.48094601035793394,
+      "r2": -1.838978408226842,
+      "prediction_min": 0.009753040969371796,
+      "prediction_max": 0.9601235389709473,
+      "predictions_outside_0_1": 0
+    }
+  ],
+  "s_R": -3.3838982582092285,
+  "s_F": -3.4329564571380615
+}

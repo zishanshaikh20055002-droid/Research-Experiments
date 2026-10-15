@@ -1,0 +1,9 @@
+{
+  "best_mean_mae": "M3",
+  "best_mean_rmse": "M3",
+  "best_mean_r2": "M3",
+  "best_mean_macro_f1": "M3",
+  "lowest_mean_monotonicity_violation": "M4",
+  "best_mean_spearman_trend": "M5",
+  "lowest_mean_adjacent_change": "M1"
+}

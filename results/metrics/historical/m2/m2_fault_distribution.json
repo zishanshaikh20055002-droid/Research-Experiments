@@ -1,0 +1,44 @@
+{
+  "train": {
+    "bearing_counts": {
+      "Outer": 3,
+      "Inner": 1,
+      "Cage": 0,
+      "Mixed": 1
+    },
+    "sequence_counts": {
+      "Outer": 2795,
+      "Inner": 482,
+      "Cage": 0,
+      "Mixed": 2487
+    }
+  },
+  "validation": {
+    "bearing_counts": {
+      "Outer": 1,
+      "Inner": 0,
+      "Cage": 0,
+      "Mixed": 0
+    },
+    "sequence_counts": {
+      "Outer": 152,
+      "Inner": 0,
+      "Cage": 0,
+      "Mixed": 0
+    }
+  },
+  "test": {
+    "bearing_counts": {
+      "Outer": 4,
+      "Inner": 2,
+      "Cage": 2,
+      "Mixed": 1
+    },
+    "sequence_counts": {
+      "Outer": 617,
+      "Inner": 1867,
+      "Cage": 637,
+      "Mixed": 43
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "mean_true_rul": 0.4880608738779827,
+  "mean_predicted_rul": 0.6803827024542982,
+  "mean_prediction_error_pred_minus_true": 0.19232182857631552,
+  "prediction_std": 0.35423187371728576
+}

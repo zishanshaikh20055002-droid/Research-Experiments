@@ -1,0 +1,89 @@
+[
+  {
+    "fold": "val_Bearing1_1",
+    "validation_bearing": "Bearing1_1",
+    "train_sequence_count": 5802,
+    "validation_sequence_count": 114,
+    "best_val_loss": 0.014380628406478647,
+    "best_epoch": 1,
+    "epochs_completed": 16,
+    "training_time_seconds": 19.26353830000062,
+    "checkpoint_path": "<PROJECT_ROOT>\\results\\m1_standardized\\m1_val_Bearing1_1_best.pt",
+    "dry_run": {
+      "input_shape": [
+        32,
+        10,
+        32
+      ],
+      "target_shape": [
+        32,
+        1
+      ],
+      "prediction_shape": [
+        32,
+        1
+      ],
+      "loss": 0.06274548918008804
+    }
+  },
+  {
+    "fold": "val_Bearing1_2",
+    "validation_bearing": "Bearing1_2",
+    "train_sequence_count": 5764,
+    "validation_sequence_count": 152,
+    "best_val_loss": 0.05957030465115646,
+    "best_epoch": 1,
+    "epochs_completed": 16,
+    "training_time_seconds": 19.685021700000107,
+    "checkpoint_path": "<PROJECT_ROOT>\\results\\m1_standardized\\m1_val_Bearing1_2_best.pt",
+    "dry_run": null
+  },
+  {
+    "fold": "val_Bearing2_1",
+    "validation_bearing": "Bearing2_1",
+    "train_sequence_count": 5434,
+    "validation_sequence_count": 482,
+    "best_val_loss": 0.06249169718195912,
+    "best_epoch": 24,
+    "epochs_completed": 39,
+    "training_time_seconds": 45.749888599999395,
+    "checkpoint_path": "<PROJECT_ROOT>\\results\\m1_standardized\\m1_val_Bearing2_1_best.pt",
+    "dry_run": null
+  },
+  {
+    "fold": "val_Bearing2_2",
+    "validation_bearing": "Bearing2_2",
+    "train_sequence_count": 5764,
+    "validation_sequence_count": 152,
+    "best_val_loss": 0.009780887783946176,
+    "best_epoch": 7,
+    "epochs_completed": 22,
+    "training_time_seconds": 55.797156800000266,
+    "checkpoint_path": "<PROJECT_ROOT>\\results\\m1_standardized\\m1_val_Bearing2_2_best.pt",
+    "dry_run": null
+  },
+  {
+    "fold": "val_Bearing3_1",
+    "validation_bearing": "Bearing3_1",
+    "train_sequence_count": 3387,
+    "validation_sequence_count": 2529,
+    "best_val_loss": 0.015183197626747472,
+    "best_epoch": 25,
+    "epochs_completed": 40,
+    "training_time_seconds": 99.88218309999957,
+    "checkpoint_path": "<PROJECT_ROOT>\\results\\m1_standardized\\m1_val_Bearing3_1_best.pt",
+    "dry_run": null
+  },
+  {
+    "fold": "val_Bearing3_2",
+    "validation_bearing": "Bearing3_2",
+    "train_sequence_count": 3429,
+    "validation_sequence_count": 2487,
+    "best_val_loss": 0.18622727619965643,
+    "best_epoch": 1,
+    "epochs_completed": 16,
+    "training_time_seconds": 48.00976679999985,
+    "checkpoint_path": "<PROJECT_ROOT>\\results\\m1_standardized\\m1_val_Bearing3_2_best.pt",
+    "dry_run": null
+  }
+]

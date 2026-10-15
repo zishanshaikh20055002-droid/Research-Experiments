@@ -1,0 +1,21 @@
+# Local environments and caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Never commit source bearing data or locally regenerated feature matrices
+/data/
+**/XJTU-SY_Bearing_Datasets/
+
+# Local credentials and transient archives
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.zip
+.DS_Store

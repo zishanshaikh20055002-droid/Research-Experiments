@@ -1,0 +1,239 @@
+{
+  "generated_at_utc": "2026-10-08T12:11:12.817054+00:00",
+  "processed_samples": 9215,
+  "feature_count": 32,
+  "feature_matrix_shape": [
+    9215,
+    32
+  ],
+  "samples_per_bearing": {
+    "Bearing1_1": 123,
+    "Bearing1_2": 161,
+    "Bearing1_3": 158,
+    "Bearing1_4": 122,
+    "Bearing1_5": 52,
+    "Bearing2_1": 491,
+    "Bearing2_2": 161,
+    "Bearing2_3": 533,
+    "Bearing2_4": 42,
+    "Bearing2_5": 339,
+    "Bearing3_1": 2538,
+    "Bearing3_2": 2496,
+    "Bearing3_3": 371,
+    "Bearing3_4": 1514,
+    "Bearing3_5": 114
+  },
+  "class_sample_counts": {
+    "Cage": 655,
+    "Inner": 2376,
+    "Mixed": 2548,
+    "Outer": 3636
+  },
+  "class_bearing_counts": {
+    "Cage": 2,
+    "Inner": 3,
+    "Mixed": 2,
+    "Outer": 8
+  },
+  "rul_statistics": {
+    "min": 0.0,
+    "max": 1.0,
+    "mean": 0.5,
+    "std": 0.28916344589811815,
+    "median": 0.5
+  },
+  "missing_records": {
+    "Bearing3_4": [
+      1105
+    ]
+  },
+  "warnings": [
+    "Bearing3_4: missing numeric CSV indices [1105]; existing files are kept in numeric order."
+  ],
+  "feature_nan_count": 0,
+  "feature_inf_count": 0,
+  "validation_checks": {
+    "rul_within_0_1": true,
+    "fault_labels_match_mapping": true,
+    "features_all_finite": true,
+    "train_test_bearing_disjoint": true,
+    "no_test_bearing_in_training_pool": true,
+    "validation_folds": [
+      {
+        "fold": "val_Bearing1_1",
+        "train_bearings": [
+          "Bearing1_2",
+          "Bearing2_1",
+          "Bearing2_2",
+          "Bearing3_1",
+          "Bearing3_2"
+        ],
+        "validation_bearing": "Bearing1_1",
+        "test_bearings": [
+          "Bearing1_3",
+          "Bearing1_4",
+          "Bearing1_5",
+          "Bearing2_3",
+          "Bearing2_4",
+          "Bearing2_5",
+          "Bearing3_3",
+          "Bearing3_4",
+          "Bearing3_5"
+        ],
+        "train_val_disjoint": true,
+        "train_test_disjoint": true,
+        "val_test_disjoint": true
+      },
+      {
+        "fold": "val_Bearing1_2",
+        "train_bearings": [
+          "Bearing1_1",
+          "Bearing2_1",
+          "Bearing2_2",
+          "Bearing3_1",
+          "Bearing3_2"
+        ],
+        "validation_bearing": "Bearing1_2",
+        "test_bearings": [
+          "Bearing1_3",
+          "Bearing1_4",
+          "Bearing1_5",
+          "Bearing2_3",
+          "Bearing2_4",
+          "Bearing2_5",
+          "Bearing3_3",
+          "Bearing3_4",
+          "Bearing3_5"
+        ],
+        "train_val_disjoint": true,
+        "train_test_disjoint": true,
+        "val_test_disjoint": true
+      },
+      {
+        "fold": "val_Bearing2_1",
+        "train_bearings": [
+          "Bearing1_1",
+          "Bearing1_2",
+          "Bearing2_2",
+          "Bearing3_1",
+          "Bearing3_2"
+        ],
+        "validation_bearing": "Bearing2_1",
+        "test_bearings": [
+          "Bearing1_3",
+          "Bearing1_4",
+          "Bearing1_5",
+          "Bearing2_3",
+          "Bearing2_4",
+          "Bearing2_5",
+          "Bearing3_3",
+          "Bearing3_4",
+          "Bearing3_5"
+        ],
+        "train_val_disjoint": true,
+        "train_test_disjoint": true,
+        "val_test_disjoint": true
+      },
+      {
+        "fold": "val_Bearing2_2",
+        "train_bearings": [
+          "Bearing1_1",
+          "Bearing1_2",
+          "Bearing2_1",
+          "Bearing3_1",
+          "Bearing3_2"
+        ],
+        "validation_bearing": "Bearing2_2",
+        "test_bearings": [
+          "Bearing1_3",
+          "Bearing1_4",
+          "Bearing1_5",
+          "Bearing2_3",
+          "Bearing2_4",
+          "Bearing2_5",
+          "Bearing3_3",
+          "Bearing3_4",
+          "Bearing3_5"
+        ],
+        "train_val_disjoint": true,
+        "train_test_disjoint": true,
+        "val_test_disjoint": true
+      },
+      {
+        "fold": "val_Bearing3_1",
+        "train_bearings": [
+          "Bearing1_1",
+          "Bearing1_2",
+          "Bearing2_1",
+          "Bearing2_2",
+          "Bearing3_2"
+        ],
+        "validation_bearing": "Bearing3_1",
+        "test_bearings": [
+          "Bearing1_3",
+          "Bearing1_4",
+          "Bearing1_5",
+          "Bearing2_3",
+          "Bearing2_4",
+          "Bearing2_5",
+          "Bearing3_3",
+          "Bearing3_4",
+          "Bearing3_5"
+        ],
+        "train_val_disjoint": true,
+        "train_test_disjoint": true,
+        "val_test_disjoint": true
+      },
+      {
+        "fold": "val_Bearing3_2",
+        "train_bearings": [
+          "Bearing1_1",
+          "Bearing1_2",
+          "Bearing2_1",
+          "Bearing2_2",
+          "Bearing3_1"
+        ],
+        "validation_bearing": "Bearing3_2",
+        "test_bearings": [
+          "Bearing1_3",
+          "Bearing1_4",
+          "Bearing1_5",
+          "Bearing2_3",
+          "Bearing2_4",
+          "Bearing2_5",
+          "Bearing3_3",
+          "Bearing3_4",
+          "Bearing3_5"
+        ],
+        "train_val_disjoint": true,
+        "train_test_disjoint": true,
+        "val_test_disjoint": true
+      }
+    ],
+    "all_validation_folds_leakage_free": true,
+    "chronological_ordering_ok": true,
+    "sequence_boundary_check": true,
+    "sequence_length": 10,
+    "sequence_stride": 1,
+    "sequence_counts_by_bearing": {
+      "Bearing1_1": 114,
+      "Bearing1_2": 152,
+      "Bearing1_3": 149,
+      "Bearing1_4": 113,
+      "Bearing1_5": 43,
+      "Bearing2_1": 482,
+      "Bearing2_2": 152,
+      "Bearing2_3": 524,
+      "Bearing2_4": 33,
+      "Bearing2_5": 330,
+      "Bearing3_1": 2529,
+      "Bearing3_2": 2487,
+      "Bearing3_3": 362,
+      "Bearing3_4": 1505,
+      "Bearing3_5": 105
+    },
+    "scaler_fitted": false,
+    "normalization_not_fitted_on_test": true,
+    "passed": true
+  }
+}

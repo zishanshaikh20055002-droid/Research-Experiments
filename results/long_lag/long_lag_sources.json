@@ -1,0 +1,99 @@
+{
+  "sources": [
+    {
+      "method": "M1",
+      "seed": "42",
+      "raw_prediction_source": "<PROJECT_ROOT>\\results\\multiseed\\m1\\seed_42\\predictions.csv"
+    },
+    {
+      "method": "M1",
+      "seed": "123",
+      "raw_prediction_source": "<PROJECT_ROOT>\\results\\multiseed\\m1\\seed_123\\predictions.csv"
+    },
+    {
+      "method": "M1",
+      "seed": "2024",
+      "raw_prediction_source": "<PROJECT_ROOT>\\results\\multiseed\\m1\\seed_2024\\predictions.csv"
+    },
+    {
+      "method": "M2",
+      "seed": "42",
+      "raw_prediction_source": "<PROJECT_ROOT>\\results\\multiseed\\m2\\seed_42\\predictions.csv"
+    },
+    {
+      "method": "M2",
+      "seed": "123",
+      "raw_prediction_source": "<PROJECT_ROOT>\\results\\multiseed\\m2\\seed_123\\predictions.csv"
+    },
+    {
+      "method": "M2",
+      "seed": "2024",
+      "raw_prediction_source": "<PROJECT_ROOT>\\results\\multiseed\\m2\\seed_2024\\predictions.csv"
+    },
+    {
+      "method": "M3-U",
+      "seed": "42",
+      "raw_prediction_source": "<PROJECT_ROOT>\\results\\multiseed\\m3\\seed_42\\predictions.csv"
+    },
+    {
+      "method": "M3-U",
+      "seed": "123",
+      "raw_prediction_source": "<PROJECT_ROOT>\\results\\multiseed\\m3\\seed_123\\predictions.csv"
+    },
+    {
+      "method": "M3-U",
+      "seed": "2024",
+      "raw_prediction_source": "<PROJECT_ROOT>\\results\\multiseed\\m3\\seed_2024\\predictions.csv"
+    },
+    {
+      "method": "M4",
+      "seed": "42",
+      "raw_prediction_source": "<PROJECT_ROOT>\\results\\multiseed\\m4\\seed_42\\predictions.csv"
+    },
+    {
+      "method": "M4",
+      "seed": "123",
+      "raw_prediction_source": "<PROJECT_ROOT>\\results\\multiseed\\m4\\seed_123\\predictions.csv"
+    },
+    {
+      "method": "M4",
+      "seed": "2024",
+      "raw_prediction_source": "<PROJECT_ROOT>\\results\\multiseed\\m4\\seed_2024\\predictions.csv"
+    },
+    {
+      "method": "M5",
+      "seed": "42",
+      "raw_prediction_source": "<PROJECT_ROOT>\\results\\multiseed\\m5\\seed_42\\predictions.csv"
+    },
+    {
+      "method": "M5",
+      "seed": "123",
+      "raw_prediction_source": "<PROJECT_ROOT>\\results\\multiseed\\m5\\seed_123\\predictions.csv"
+    },
+    {
+      "method": "M5",
+      "seed": "2024",
+      "raw_prediction_source": "<PROJECT_ROOT>\\results\\multiseed\\m5\\seed_2024\\predictions.csv"
+    },
+    {
+      "method": "M2-U",
+      "seed": "42",
+      "raw_prediction_source": "<USER_HOME>\\OneDrive\\Desktop\\shuffle_control_results\\outputs\\M2-unshuffled\\seed_42\\predictions.csv"
+    },
+    {
+      "method": "M2-U",
+      "seed": "123",
+      "raw_prediction_source": "<USER_HOME>\\OneDrive\\Desktop\\shuffle_control_results\\outputs\\M2-unshuffled\\seed_123\\predictions.csv"
+    },
+    {
+      "method": "M2-U",
+      "seed": "2024",
+      "raw_prediction_source": "<USER_HOME>\\OneDrive\\Desktop\\shuffle_control_results\\outputs\\M2-unshuffled\\seed_2024\\predictions.csv"
+    }
+  ],
+  "lags": [
+    1,
+    10,
+    20
+  ]
+}

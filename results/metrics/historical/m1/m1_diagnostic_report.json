@@ -1,0 +1,102 @@
+{
+  "selected_fold": "val_Bearing2_2",
+  "sequence_alignment": {
+    "target_convention": "features[t:t+10] are paired with RUL at final timestep t+9",
+    "chronological_ordering_ok": true,
+    "bearing_boundary_ok": true,
+    "examples_count": 9
+  },
+  "split": {
+    "train_bearings": [
+      "Bearing1_1",
+      "Bearing1_2",
+      "Bearing2_1",
+      "Bearing3_1",
+      "Bearing3_2"
+    ],
+    "validation_bearings": [
+      "Bearing2_2"
+    ],
+    "test_bearings": [
+      "Bearing1_3",
+      "Bearing1_4",
+      "Bearing1_5",
+      "Bearing2_3",
+      "Bearing2_4",
+      "Bearing2_5",
+      "Bearing3_3",
+      "Bearing3_4",
+      "Bearing3_5"
+    ],
+    "train_validation_overlap": [],
+    "train_test_overlap": [],
+    "validation_test_overlap": [],
+    "disjoint": true,
+    "test_used_for_training_decisions": false,
+    "scaler_fit_bearings": [
+      "Bearing1_1",
+      "Bearing1_2",
+      "Bearing2_1",
+      "Bearing3_1",
+      "Bearing3_2"
+    ],
+    "early_stopping_bearing": "Bearing2_2",
+    "model_selection_metric": "validation MSE loss only"
+  },
+  "rul_distribution": [
+    {
+      "split": "train",
+      "sequence_count": 5764,
+      "mean_rul": 0.4962044017376228,
+      "std_rul": 0.2868468564867938,
+      "min_rul": 0.0,
+      "max_rul": 0.9964525103569031
+    },
+    {
+      "split": "validation",
+      "sequence_count": 152,
+      "mean_rul": 0.471875000166045,
+      "std_rul": 0.2751420089602426,
+      "min_rul": 0.0,
+      "max_rul": 0.9437500238418579
+    },
+    {
+      "split": "test",
+      "sequence_count": 3164,
+      "mean_rul": 0.4880608738779827,
+      "std_rul": 0.28321737884248305,
+      "min_rul": 0.0,
+      "max_rul": 0.9940515756607056
+    }
+  ],
+  "prediction_bias": {
+    "mean_true_rul": 0.4880608739733438,
+    "mean_predicted_rul": 0.6803827021273705,
+    "mean_prediction_error_pred_minus_true": 0.19232182815402657,
+    "prediction_std": 0.35423187363809944,
+    "error_std": 0.3522447938047852
+  },
+  "saturation_analysis": {
+    "prediction_min": 0.01784359,
+    "prediction_max": 0.9696648,
+    "prediction_mean": 0.6803827021273705,
+    "prediction_std": 0.35423187363809944,
+    "fraction_below_0_05": 0.06479140328697851,
+    "fraction_above_0_95": 0.11946902654867257,
+    "fraction_below_0_01": 0.0,
+    "fraction_above_0_99": 0.0,
+    "quantiles": {
+      "0%": 0.01784359,
+      "1%": 0.021863506629999998,
+      "5%": 0.041877271,
+      "25%": 0.32765557749999996,
+      "50%": 0.903351135,
+      "75%": 0.9436235475,
+      "95%": 0.9552632005,
+      "99%": 0.963072069,
+      "100%": 0.9696648
+    },
+    "interpretation": "No hard sigmoid saturation if only a small fraction is near 0 or 1."
+  },
+  "technical_interpretation": "The sequence-label alignment is consistent with the intended final-timestep target. The selected M1 fold is leakage-free and its scaler was fit on fold-training bearings only. The weak aggregate test score appears more consistent with cross-bearing/domain shift and bearing-level generalization difficulty than with a simple indexing bug. The largest feature shift is `h_band_energy_ratio_6000_12800hz` with standardized train-test mean shift 2.005. Performance is uneven by bearing; the highest RMSE is on `Bearing3_4`. The prediction range and near-boundary fractions do not indicate severe sigmoid saturation, although the sigmoid does constrain outputs inside [0,1]. The sequence-start RUL persistence diagnostic is label-derived and not a valid deployable model, but it confirms that much of the target is chronological and that M1 is not yet learning a robust cross-bearing degradation mapping."
+}

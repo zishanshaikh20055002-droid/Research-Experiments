@@ -1,0 +1,105 @@
+{
+  "model": "M1",
+  "architecture": {
+    "encoder": "BiLSTM",
+    "input_size": 32,
+    "hidden_size": 64,
+    "num_layers": 1,
+    "bidirectional": true,
+    "head": "Linear(128->64), ReLU, Linear(64->1), Sigmoid",
+    "tasks": [
+      "RUL regression only"
+    ]
+  },
+  "hyperparameters": {
+    "model": "M1",
+    "seed": 42,
+    "sequence_length": 10,
+    "stride": 1,
+    "hidden_size": 64,
+    "num_layers": 1,
+    "dropout": 0.0,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "max_epochs": 100,
+    "patience": 15,
+    "grad_clip_norm": 1.0,
+    "loss": "mse",
+    "optimizer": "adam",
+    "num_workers": 0
+  },
+  "torch": {
+    "torch_version": "2.14.1+cpu",
+    "cuda_available": false,
+    "cuda_device_count": 0,
+    "devices": [],
+    "nvidia_smi": "NVIDIA GeForce RTX 3050 A Laptop GPU, 4094, 610.62"
+  },
+  "split": {
+    "training_pool": [
+      "Bearing1_1",
+      "Bearing1_2",
+      "Bearing2_1",
+      "Bearing2_2",
+      "Bearing3_1",
+      "Bearing3_2"
+    ],
+    "test": [
+      "Bearing1_3",
+      "Bearing1_4",
+      "Bearing1_5",
+      "Bearing2_3",
+      "Bearing2_4",
+      "Bearing2_5",
+      "Bearing3_3",
+      "Bearing3_4",
+      "Bearing3_5"
+    ],
+    "validation": "leave-one-training-bearing-out"
+  },
+  "sequence_counts": {
+    "val_Bearing1_1": {
+      "train": 5802,
+      "validation": 114
+    },
+    "val_Bearing1_2": {
+      "train": 5764,
+      "validation": 152
+    },
+    "val_Bearing2_1": {
+      "train": 5434,
+      "validation": 482
+    },
+    "val_Bearing2_2": {
+      "train": 5764,
+      "validation": 152
+    },
+    "val_Bearing3_1": {
+      "train": 3387,
+      "validation": 2529
+    },
+    "val_Bearing3_2": {
+      "train": 3429,
+      "validation": 2487
+    }
+  },
+  "selected_fold": "val_Bearing2_2",
+  "training_time_seconds_selected_fold": 55.797156800000266,
+  "best_validation_loss": 0.009780887783946176,
+  "best_epoch": 7,
+  "epochs_completed_selected_fold": 22,
+  "test_metrics": {
+    "mae": 0.306988443284878,
+    "rmse": 0.4012790368197732,
+    "r2": -1.0081235508286865,
+    "prediction_min": 0.017843589186668396,
+    "prediction_max": 0.9696648120880127,
+    "predictions_outside_0_1": 0,
+    "test_sequence_count": 3164
+  },
+  "warnings": [
+    "Bearing3_4: missing numeric CSV indices [1105]; existing files are kept in numeric order.",
+    "CUDA is not available to PyTorch; M1-standardized trained on CPU.",
+    "Existing M1 trainer already used fold-training-only StandardScaler; this run is an explicitly named standardized rerun."
+  ]
+}

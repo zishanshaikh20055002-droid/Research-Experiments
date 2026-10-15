@@ -1,0 +1,17 @@
+{
+  "sequence_length": 10,
+  "stride": 1,
+  "batch_size": 32,
+  "lr": 0.001,
+  "max_epochs": 40,
+  "patience": 8,
+  "grad_clip": 1.0,
+  "lambda_mono": 0.1,
+  "validation_bearing": "Bearing2_2",
+  "model": "M4",
+  "seed": 123,
+  "train_loader_shuffle": false,
+  "validation_loader_shuffle": false,
+  "test_loader_shuffle": false,
+  "device": "cpu"
+}

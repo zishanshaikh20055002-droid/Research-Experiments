@@ -1,0 +1,77 @@
+{
+  "model": "M3",
+  "seed": 42,
+  "best_epoch": 7,
+  "best_validation_loss": 0.088030059184683,
+  "training_time_seconds": 24.837996000000203,
+  "mae": 0.27160226624775013,
+  "rmse": 0.3436060817018794,
+  "r2": -0.47237748872014396,
+  "prediction_min": 0.03387393057346344,
+  "prediction_max": 0.8751366138458252,
+  "predictions_outside_0_1": 0,
+  "mean_prediction_bias_pred_minus_true": 0.13293369114398956,
+  "fault_accuracy": 0.14190897597977245,
+  "fault_macro_precision": 0.0422182311535215,
+  "fault_macro_recall": 0.18733745429874488,
+  "fault_macro_f1": 0.06890648796832165,
+  "fault_per_class": {
+    "Outer": {
+      "precision": 0.16392242956458106,
+      "recall": 0.7260940032414911,
+      "f1": 0.26746268656716415,
+      "support": 617
+    },
+    "Inner": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 1867
+    },
+    "Cage": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 637
+    },
+    "Mixed": {
+      "precision": 0.0049504950495049506,
+      "recall": 0.023255813953488372,
+      "f1": 0.00816326530612245,
+      "support": 43
+    }
+  },
+  "mono_violation_rate": 0.4846275752773376,
+  "mono_mean_violation_magnitude": 0.015689365509739102,
+  "mono_violating_transitions": 1529,
+  "mono_valid_adjacent_transitions": 3155,
+  "per_condition": [
+    {
+      "condition": "35Hz12kN",
+      "mae": 0.17159175772342036,
+      "rmse": 0.21237866882696085,
+      "r2": 0.3764149219868502,
+      "prediction_min": 0.045553017407655716,
+      "prediction_max": 0.871283233165741,
+      "predictions_outside_0_1": 0
+    },
+    {
+      "condition": "37.5Hz11kN",
+      "mae": 0.1739312533765355,
+      "rmse": 0.21844614553796154,
+      "r2": 0.4011124974451904,
+      "prediction_min": 0.03425941243767738,
+      "prediction_max": 0.7163186073303223,
+      "predictions_outside_0_1": 0
+    },
+    {
+      "condition": "40Hz10kN",
+      "mae": 0.3310025672197014,
+      "rmse": 0.4012370984635521,
+      "r2": -0.9759301998164704,
+      "prediction_min": 0.03387393057346344,
+      "prediction_max": 0.8751366138458252,
+      "predictions_outside_0_1": 0
+    }
+  ]
+}

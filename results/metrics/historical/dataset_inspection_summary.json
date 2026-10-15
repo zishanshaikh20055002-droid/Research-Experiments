@@ -1,0 +1,792 @@
+{
+  "generated_at_utc": "2026-10-08T11:56:32.921326+00:00",
+  "repository_root": "<REPOSITORY_ROOT>",
+  "dataset_path": "<REPOSITORY_ROOT>\\data\\XJTU-SY_Bearing_Datasets",
+  "expected_rows_per_csv": 32768,
+  "expected_columns": [
+    "Horizontal_vibration_signals",
+    "Vertical_vibration_signals"
+  ],
+  "bearings": [
+    {
+      "bearing": "Bearing1_1",
+      "condition": "35Hz12kN",
+      "path": "<REPOSITORY_ROOT>\\data\\XJTU-SY_Bearing_Datasets\\35Hz12kN\\Bearing1_1",
+      "recording_count": 123,
+      "first_file": "1.csv",
+      "last_file": "123.csv",
+      "missing_numeric_csv_indices": [],
+      "non_numeric_csv_names": [],
+      "row_count_distribution": {
+        "32768": 123
+      },
+      "column_signatures": {
+        "Horizontal_vibration_signals | Vertical_vibration_signals": 123
+      },
+      "representative_csv": {
+        "file": "<REPOSITORY_ROOT>\\data\\XJTU-SY_Bearing_Datasets\\35Hz12kN\\Bearing1_1\\1.csv",
+        "rows": 32768,
+        "columns": [
+          "Horizontal_vibration_signals",
+          "Vertical_vibration_signals"
+        ],
+        "column_count": 2,
+        "has_expected_columns": true,
+        "malformed": false,
+        "malformed_reason": null,
+        "nan_count": 0,
+        "inf_count": 0,
+        "non_numeric_count": 0,
+        "empty_value_count": 0
+      }
+    },
+    {
+      "bearing": "Bearing1_2",
+      "condition": "35Hz12kN",
+      "path": "<REPOSITORY_ROOT>\\data\\XJTU-SY_Bearing_Datasets\\35Hz12kN\\Bearing1_2",
+      "recording_count": 161,
+      "first_file": "1.csv",
+      "last_file": "161.csv",
+      "missing_numeric_csv_indices": [],
+      "non_numeric_csv_names": [],
+      "row_count_distribution": {
+        "32768": 161
+      },
+      "column_signatures": {
+        "Horizontal_vibration_signals | Vertical_vibration_signals": 161
+      },
+      "representative_csv": {
+        "file": "<REPOSITORY_ROOT>\\data\\XJTU-SY_Bearing_Datasets\\35Hz12kN\\Bearing1_2\\1.csv",
+        "rows": 32768,
+        "columns": [
+          "Horizontal_vibration_signals",
+          "Vertical_vibration_signals"
+        ],
+        "column_count": 2,
+        "has_expected_columns": true,
+        "malformed": false,
+        "malformed_reason": null,
+        "nan_count": 0,
+        "inf_count": 0,
+        "non_numeric_count": 0,
+        "empty_value_count": 0
+      }
+    },
+    {
+      "bearing": "Bearing1_3",
+      "condition": "35Hz12kN",
+      "path": "<REPOSITORY_ROOT>\\data\\XJTU-SY_Bearing_Datasets\\35Hz12kN\\Bearing1_3",
+      "recording_count": 158,
+      "first_file": "1.csv",
+      "last_file": "158.csv",
+      "missing_numeric_csv_indices": [],
+      "non_numeric_csv_names": [],
+      "row_count_distribution": {
+        "32768": 158
+      },
+      "column_signatures": {
+        "Horizontal_vibration_signals | Vertical_vibration_signals": 158
+      },
+      "representative_csv": {
+        "file": "<REPOSITORY_ROOT>\\data\\XJTU-SY_Bearing_Datasets\\35Hz12kN\\Bearing1_3\\1.csv",
+        "rows": 32768,
+        "columns": [
+          "Horizontal_vibration_signals",
+          "Vertical_vibration_signals"
+        ],
+        "column_count": 2,
+        "has_expected_columns": true,
+        "malformed": false,
+        "malformed_reason": null,
+        "nan_count": 0,
+        "inf_count": 0,
+        "non_numeric_count": 0,
+        "empty_value_count": 0
+      }
+    },
+    {
+      "bearing": "Bearing1_4",
+      "condition": "35Hz12kN",
+      "path": "<REPOSITORY_ROOT>\\data\\XJTU-SY_Bearing_Datasets\\35Hz12kN\\Bearing1_4",
+      "recording_count": 122,
+      "first_file": "1.csv",
+      "last_file": "122.csv",
+      "missing_numeric_csv_indices": [],
+      "non_numeric_csv_names": [],
+      "row_count_distribution": {
+        "32768": 122
+      },
+      "column_signatures": {
+        "Horizontal_vibration_signals | Vertical_vibration_signals": 122
+      },
+      "representative_csv": {
+        "file": "<REPOSITORY_ROOT>\\data\\XJTU-SY_Bearing_Datasets\\35Hz12kN\\Bearing1_4\\1.csv",
+        "rows": 32768,
+        "columns": [
+          "Horizontal_vibration_signals",
+          "Vertical_vibration_signals"
+        ],
+        "column_count": 2,
+        "has_expected_columns": true,
+        "malformed": false,
+        "malformed_reason": null,
+        "nan_count": 0,
+        "inf_count": 0,
+        "non_numeric_count": 0,
+        "empty_value_count": 0
+      }
+    },
+    {
+      "bearing": "Bearing1_5",
+      "condition": "35Hz12kN",
+      "path": "<REPOSITORY_ROOT>\\data\\XJTU-SY_Bearing_Datasets\\35Hz12kN\\Bearing1_5",
+      "recording_count": 52,
+      "first_file": "1.csv",
+      "last_file": "52.csv",
+      "missing_numeric_csv_indices": [],
+      "non_numeric_csv_names": [],
+      "row_count_distribution": {
+        "32768": 52
+      },
+      "column_signatures": {
+        "Horizontal_vibration_signals | Vertical_vibration_signals": 52
+      },
+      "representative_csv": {
+        "file": "<REPOSITORY_ROOT>\\data\\XJTU-SY_Bearing_Datasets\\35Hz12kN\\Bearing1_5\\1.csv",
+        "rows": 32768,
+        "columns": [
+          "Horizontal_vibration_signals",
+          "Vertical_vibration_signals"
+        ],
+        "column_count": 2,
+        "has_expected_columns": true,
+        "malformed": false,
+        "malformed_reason": null,
+        "nan_count": 0,
+        "inf_count": 0,
+        "non_numeric_count": 0,
+        "empty_value_count": 0
+      }
+    },
+    {
+      "bearing": "Bearing2_1",
+      "condition": "37.5Hz11kN",
+      "path": "<REPOSITORY_ROOT>\\data\\XJTU-SY_Bearing_Datasets\\37.5Hz11kN\\Bearing2_1",
+      "recording_count": 491,
+      "first_file": "1.csv",
+      "last_file": "491.csv",
+      "missing_numeric_csv_indices": [],
+      "non_numeric_csv_names": [],
+      "row_count_distribution": {
+        "32768": 491
+      },
+      "column_signatures": {
+        "Horizontal_vibration_signals | Vertical_vibration_signals": 491
+      },
+      "representative_csv": {
+        "file": "<REPOSITORY_ROOT>\\data\\XJTU-SY_Bearing_Datasets\\37.5Hz11kN\\Bearing2_1\\1.csv",
+        "rows": 32768,
+        "columns": [
+          "Horizontal_vibration_signals",
+          "Vertical_vibration_signals"
+        ],
+        "column_count": 2,
+        "has_expected_columns": true,
+        "malformed": false,
+        "malformed_reason": null,
+        "nan_count": 0,
+        "inf_count": 0,
+        "non_numeric_count": 0,
+        "empty_value_count": 0
+      }
+    },
+    {
+      "bearing": "Bearing2_2",
+      "condition": "37.5Hz11kN",
+      "path": "<REPOSITORY_ROOT>\\data\\XJTU-SY_Bearing_Datasets\\37.5Hz11kN\\Bearing2_2",
+      "recording_count": 161,
+      "first_file": "1.csv",
+      "last_file": "161.csv",
+      "missing_numeric_csv_indices": [],
+      "non_numeric_csv_names": [],
+      "row_count_distribution": {
+        "32768": 161
+      },
+      "column_signatures": {
+        "Horizontal_vibration_signals | Vertical_vibration_signals": 161
+      },
+      "representative_csv": {
+        "file": "<REPOSITORY_ROOT>\\data\\XJTU-SY_Bearing_Datasets\\37.5Hz11kN\\Bearing2_2\\1.csv",
+        "rows": 32768,
+        "columns": [
+          "Horizontal_vibration_signals",
+          "Vertical_vibration_signals"
+        ],
+        "column_count": 2,
+        "has_expected_columns": true,
+        "malformed": false,
+        "malformed_reason": null,
+        "nan_count": 0,
+        "inf_count": 0,
+        "non_numeric_count": 0,
+        "empty_value_count": 0
+      }
+    },
+    {
+      "bearing": "Bearing2_3",
+      "condition": "37.5Hz11kN",
+      "path": "<REPOSITORY_ROOT>\\data\\XJTU-SY_Bearing_Datasets\\37.5Hz11kN\\Bearing2_3",
+      "recording_count": 533,
+      "first_file": "1.csv",
+      "last_file": "533.csv",
+      "missing_numeric_csv_indices": [],
+      "non_numeric_csv_names": [],
+      "row_count_distribution": {
+        "32768": 533
+      },
+      "column_signatures": {
+        "Horizontal_vibration_signals | Vertical_vibration_signals": 533
+      },
+      "representative_csv": {
+        "file": "<REPOSITORY_ROOT>\\data\\XJTU-SY_Bearing_Datasets\\37.5Hz11kN\\Bearing2_3\\1.csv",
+        "rows": 32768,
+        "columns": [
+          "Horizontal_vibration_signals",
+          "Vertical_vibration_signals"
+        ],
+        "column_count": 2,
+        "has_expected_columns": true,
+        "malformed": false,
+        "malformed_reason": null,
+        "nan_count": 0,
+        "inf_count": 0,
+        "non_numeric_count": 0,
+        "empty_value_count": 0
+      }
+    },
+    {
+      "bearing": "Bearing2_4",
+      "condition": "37.5Hz11kN",
+      "path": "<REPOSITORY_ROOT>\\data\\XJTU-SY_Bearing_Datasets\\37.5Hz11kN\\Bearing2_4",
+      "recording_count": 42,
+      "first_file": "1.csv",
+      "last_file": "42.csv",
+      "missing_numeric_csv_indices": [],
+      "non_numeric_csv_names": [],
+      "row_count_distribution": {
+        "32768": 42
+      },
+      "column_signatures": {
+        "Horizontal_vibration_signals | Vertical_vibration_signals": 42
+      },
+      "representative_csv": {
+        "file": "<REPOSITORY_ROOT>\\data\\XJTU-SY_Bearing_Datasets\\37.5Hz11kN\\Bearing2_4\\1.csv",
+        "rows": 32768,
+        "columns": [
+          "Horizontal_vibration_signals",
+          "Vertical_vibration_signals"
+        ],
+        "column_count": 2,
+        "has_expected_columns": true,
+        "malformed": false,
+        "malformed_reason": null,
+        "nan_count": 0,
+        "inf_count": 0,
+        "non_numeric_count": 0,
+        "empty_value_count": 0
+      }
+    },
+    {
+      "bearing": "Bearing2_5",
+      "condition": "37.5Hz11kN",
+      "path": "<REPOSITORY_ROOT>\\data\\XJTU-SY_Bearing_Datasets\\37.5Hz11kN\\Bearing2_5",
+      "recording_count": 339,
+      "first_file": "1.csv",
+      "last_file": "339.csv",
+      "missing_numeric_csv_indices": [],
+      "non_numeric_csv_names": [],
+      "row_count_distribution": {
+        "32768": 339
+      },
+      "column_signatures": {
+        "Horizontal_vibration_signals | Vertical_vibration_signals": 339
+      },
+      "representative_csv": {
+        "file": "<REPOSITORY_ROOT>\\data\\XJTU-SY_Bearing_Datasets\\37.5Hz11kN\\Bearing2_5\\1.csv",
+        "rows": 32768,
+        "columns": [
+          "Horizontal_vibration_signals",
+          "Vertical_vibration_signals"
+        ],
+        "column_count": 2,
+        "has_expected_columns": true,
+        "malformed": false,
+        "malformed_reason": null,
+        "nan_count": 0,
+        "inf_count": 0,
+        "non_numeric_count": 0,
+        "empty_value_count": 0
+      }
+    },
+    {
+      "bearing": "Bearing3_1",
+      "condition": "40Hz10kN",
+      "path": "<REPOSITORY_ROOT>\\data\\XJTU-SY_Bearing_Datasets\\40Hz10kN\\Bearing3_1",
+      "recording_count": 2538,
+      "first_file": "1.csv",
+      "last_file": "2538.csv",
+      "missing_numeric_csv_indices": [],
+      "non_numeric_csv_names": [],
+      "row_count_distribution": {
+        "32768": 2538
+      },
+      "column_signatures": {
+        "Horizontal_vibration_signals | Vertical_vibration_signals": 2538
+      },
+      "representative_csv": {
+        "file": "<REPOSITORY_ROOT>\\data\\XJTU-SY_Bearing_Datasets\\40Hz10kN\\Bearing3_1\\1.csv",
+        "rows": 32768,
+        "columns": [
+          "Horizontal_vibration_signals",
+          "Vertical_vibration_signals"
+        ],
+        "column_count": 2,
+        "has_expected_columns": true,
+        "malformed": false,
+        "malformed_reason": null,
+        "nan_count": 0,
+        "inf_count": 0,
+        "non_numeric_count": 0,
+        "empty_value_count": 0
+      }
+    },
+    {
+      "bearing": "Bearing3_2",
+      "condition": "40Hz10kN",
+      "path": "<REPOSITORY_ROOT>\\data\\XJTU-SY_Bearing_Datasets\\40Hz10kN\\Bearing3_2",
+      "recording_count": 2496,
+      "first_file": "1.csv",
+      "last_file": "2496.csv",
+      "missing_numeric_csv_indices": [],
+      "non_numeric_csv_names": [],
+      "row_count_distribution": {
+        "32768": 2496
+      },
+      "column_signatures": {
+        "Horizontal_vibration_signals | Vertical_vibration_signals": 2496
+      },
+      "representative_csv": {
+        "file": "<REPOSITORY_ROOT>\\data\\XJTU-SY_Bearing_Datasets\\40Hz10kN\\Bearing3_2\\1.csv",
+        "rows": 32768,
+        "columns": [
+          "Horizontal_vibration_signals",
+          "Vertical_vibration_signals"
+        ],
+        "column_count": 2,
+        "has_expected_columns": true,
+        "malformed": false,
+        "malformed_reason": null,
+        "nan_count": 0,
+        "inf_count": 0,
+        "non_numeric_count": 0,
+        "empty_value_count": 0
+      }
+    },
+    {
+      "bearing": "Bearing3_3",
+      "condition": "40Hz10kN",
+      "path": "<REPOSITORY_ROOT>\\data\\XJTU-SY_Bearing_Datasets\\40Hz10kN\\Bearing3_3",
+      "recording_count": 371,
+      "first_file": "1.csv",
+      "last_file": "371.csv",
+      "missing_numeric_csv_indices": [],
+      "non_numeric_csv_names": [],
+      "row_count_distribution": {
+        "32768": 371
+      },
+      "column_signatures": {
+        "Horizontal_vibration_signals | Vertical_vibration_signals": 371
+      },
+      "representative_csv": {
+        "file": "<REPOSITORY_ROOT>\\data\\XJTU-SY_Bearing_Datasets\\40Hz10kN\\Bearing3_3\\1.csv",
+        "rows": 32768,
+        "columns": [
+          "Horizontal_vibration_signals",
+          "Vertical_vibration_signals"
+        ],
+        "column_count": 2,
+        "has_expected_columns": true,
+        "malformed": false,
+        "malformed_reason": null,
+        "nan_count": 0,
+        "inf_count": 0,
+        "non_numeric_count": 0,
+        "empty_value_count": 0
+      }
+    },
+    {
+      "bearing": "Bearing3_4",
+      "condition": "40Hz10kN",
+      "path": "<REPOSITORY_ROOT>\\data\\XJTU-SY_Bearing_Datasets\\40Hz10kN\\Bearing3_4",
+      "recording_count": 1514,
+      "first_file": "1.csv",
+      "last_file": "1515.csv",
+      "missing_numeric_csv_indices": [
+        1105
+      ],
+      "non_numeric_csv_names": [],
+      "row_count_distribution": {
+        "32768": 1514
+      },
+      "column_signatures": {
+        "Horizontal_vibration_signals | Vertical_vibration_signals": 1514
+      },
+      "representative_csv": {
+        "file": "<REPOSITORY_ROOT>\\data\\XJTU-SY_Bearing_Datasets\\40Hz10kN\\Bearing3_4\\1.csv",
+        "rows": 32768,
+        "columns": [
+          "Horizontal_vibration_signals",
+          "Vertical_vibration_signals"
+        ],
+        "column_count": 2,
+        "has_expected_columns": true,
+        "malformed": false,
+        "malformed_reason": null,
+        "nan_count": 0,
+        "inf_count": 0,
+        "non_numeric_count": 0,
+        "empty_value_count": 0
+      }
+    },
+    {
+      "bearing": "Bearing3_5",
+      "condition": "40Hz10kN",
+      "path": "<REPOSITORY_ROOT>\\data\\XJTU-SY_Bearing_Datasets\\40Hz10kN\\Bearing3_5",
+      "recording_count": 114,
+      "first_file": "1.csv",
+      "last_file": "114.csv",
+      "missing_numeric_csv_indices": [],
+      "non_numeric_csv_names": [],
+      "row_count_distribution": {
+        "32768": 114
+      },
+      "column_signatures": {
+        "Horizontal_vibration_signals | Vertical_vibration_signals": 114
+      },
+      "representative_csv": {
+        "file": "<REPOSITORY_ROOT>\\data\\XJTU-SY_Bearing_Datasets\\40Hz10kN\\Bearing3_5\\1.csv",
+        "rows": 32768,
+        "columns": [
+          "Horizontal_vibration_signals",
+          "Vertical_vibration_signals"
+        ],
+        "column_count": 2,
+        "has_expected_columns": true,
+        "malformed": false,
+        "malformed_reason": null,
+        "nan_count": 0,
+        "inf_count": 0,
+        "non_numeric_count": 0,
+        "empty_value_count": 0
+      }
+    }
+  ],
+  "missing_bearing_folders": [],
+  "unexpected_bearing_folders": [],
+  "total_recordings": 9215,
+  "total_csv_bytes": 12218231003,
+  "approx_raw_data_size_gb": 11.379,
+  "malformed_csvs": [],
+  "shape_problems": [],
+  "column_problems": [],
+  "value_problems": [],
+  "missing_files": [
+    {
+      "bearing": "Bearing3_4",
+      "missing_numeric_csv_indices": [
+        1105
+      ]
+    }
+  ],
+  "duplicate_or_suspicious_files": [],
+  "filename_ordering_notes": [
+    {
+      "bearing": "Bearing1_1",
+      "note": "Lexicographic order differs from numeric chronological order; use numeric filename sorting.",
+      "first_numeric": [
+        "1.csv",
+        "2.csv",
+        "3.csv",
+        "4.csv",
+        "5.csv"
+      ],
+      "first_lexicographic": [
+        "1.csv",
+        "10.csv",
+        "100.csv",
+        "101.csv",
+        "102.csv"
+      ]
+    },
+    {
+      "bearing": "Bearing1_2",
+      "note": "Lexicographic order differs from numeric chronological order; use numeric filename sorting.",
+      "first_numeric": [
+        "1.csv",
+        "2.csv",
+        "3.csv",
+        "4.csv",
+        "5.csv"
+      ],
+      "first_lexicographic": [
+        "1.csv",
+        "10.csv",
+        "100.csv",
+        "101.csv",
+        "102.csv"
+      ]
+    },
+    {
+      "bearing": "Bearing1_3",
+      "note": "Lexicographic order differs from numeric chronological order; use numeric filename sorting.",
+      "first_numeric": [
+        "1.csv",
+        "2.csv",
+        "3.csv",
+        "4.csv",
+        "5.csv"
+      ],
+      "first_lexicographic": [
+        "1.csv",
+        "10.csv",
+        "100.csv",
+        "101.csv",
+        "102.csv"
+      ]
+    },
+    {
+      "bearing": "Bearing1_4",
+      "note": "Lexicographic order differs from numeric chronological order; use numeric filename sorting.",
+      "first_numeric": [
+        "1.csv",
+        "2.csv",
+        "3.csv",
+        "4.csv",
+        "5.csv"
+      ],
+      "first_lexicographic": [
+        "1.csv",
+        "10.csv",
+        "100.csv",
+        "101.csv",
+        "102.csv"
+      ]
+    },
+    {
+      "bearing": "Bearing1_5",
+      "note": "Lexicographic order differs from numeric chronological order; use numeric filename sorting.",
+      "first_numeric": [
+        "1.csv",
+        "2.csv",
+        "3.csv",
+        "4.csv",
+        "5.csv"
+      ],
+      "first_lexicographic": [
+        "1.csv",
+        "10.csv",
+        "11.csv",
+        "12.csv",
+        "13.csv"
+      ]
+    },
+    {
+      "bearing": "Bearing2_1",
+      "note": "Lexicographic order differs from numeric chronological order; use numeric filename sorting.",
+      "first_numeric": [
+        "1.csv",
+        "2.csv",
+        "3.csv",
+        "4.csv",
+        "5.csv"
+      ],
+      "first_lexicographic": [
+        "1.csv",
+        "10.csv",
+        "100.csv",
+        "101.csv",
+        "102.csv"
+      ]
+    },
+    {
+      "bearing": "Bearing2_2",
+      "note": "Lexicographic order differs from numeric chronological order; use numeric filename sorting.",
+      "first_numeric": [
+        "1.csv",
+        "2.csv",
+        "3.csv",
+        "4.csv",
+        "5.csv"
+      ],
+      "first_lexicographic": [
+        "1.csv",
+        "10.csv",
+        "100.csv",
+        "101.csv",
+        "102.csv"
+      ]
+    },
+    {
+      "bearing": "Bearing2_3",
+      "note": "Lexicographic order differs from numeric chronological order; use numeric filename sorting.",
+      "first_numeric": [
+        "1.csv",
+        "2.csv",
+        "3.csv",
+        "4.csv",
+        "5.csv"
+      ],
+      "first_lexicographic": [
+        "1.csv",
+        "10.csv",
+        "100.csv",
+        "101.csv",
+        "102.csv"
+      ]
+    },
+    {
+      "bearing": "Bearing2_4",
+      "note": "Lexicographic order differs from numeric chronological order; use numeric filename sorting.",
+      "first_numeric": [
+        "1.csv",
+        "2.csv",
+        "3.csv",
+        "4.csv",
+        "5.csv"
+      ],
+      "first_lexicographic": [
+        "1.csv",
+        "10.csv",
+        "11.csv",
+        "12.csv",
+        "13.csv"
+      ]
+    },
+    {
+      "bearing": "Bearing2_5",
+      "note": "Lexicographic order differs from numeric chronological order; use numeric filename sorting.",
+      "first_numeric": [
+        "1.csv",
+        "2.csv",
+        "3.csv",
+        "4.csv",
+        "5.csv"
+      ],
+      "first_lexicographic": [
+        "1.csv",
+        "10.csv",
+        "100.csv",
+        "101.csv",
+        "102.csv"
+      ]
+    },
+    {
+      "bearing": "Bearing3_1",
+      "note": "Lexicographic order differs from numeric chronological order; use numeric filename sorting.",
+      "first_numeric": [
+        "1.csv",
+        "2.csv",
+        "3.csv",
+        "4.csv",
+        "5.csv"
+      ],
+      "first_lexicographic": [
+        "1.csv",
+        "10.csv",
+        "100.csv",
+        "1000.csv",
+        "1001.csv"
+      ]
+    },
+    {
+      "bearing": "Bearing3_2",
+      "note": "Lexicographic order differs from numeric chronological order; use numeric filename sorting.",
+      "first_numeric": [
+        "1.csv",
+        "2.csv",
+        "3.csv",
+        "4.csv",
+        "5.csv"
+      ],
+      "first_lexicographic": [
+        "1.csv",
+        "10.csv",
+        "100.csv",
+        "1000.csv",
+        "1001.csv"
+      ]
+    },
+    {
+      "bearing": "Bearing3_3",
+      "note": "Lexicographic order differs from numeric chronological order; use numeric filename sorting.",
+      "first_numeric": [
+        "1.csv",
+        "2.csv",
+        "3.csv",
+        "4.csv",
+        "5.csv"
+      ],
+      "first_lexicographic": [
+        "1.csv",
+        "10.csv",
+        "100.csv",
+        "101.csv",
+        "102.csv"
+      ]
+    },
+    {
+      "bearing": "Bearing3_4",
+      "note": "Lexicographic order differs from numeric chronological order; use numeric filename sorting.",
+      "first_numeric": [
+        "1.csv",
+        "2.csv",
+        "3.csv",
+        "4.csv",
+        "5.csv"
+      ],
+      "first_lexicographic": [
+        "1.csv",
+        "10.csv",
+        "100.csv",
+        "1000.csv",
+        "1001.csv"
+      ]
+    },
+    {
+      "bearing": "Bearing3_5",
+      "note": "Lexicographic order differs from numeric chronological order; use numeric filename sorting.",
+      "first_numeric": [
+        "1.csv",
+        "2.csv",
+        "3.csv",
+        "4.csv",
+        "5.csv"
+      ],
+      "first_lexicographic": [
+        "1.csv",
+        "10.csv",
+        "100.csv",
+        "101.csv",
+        "102.csv"
+      ]
+    }
+  ],
+  "gpu": {
+    "torch_available": false,
+    "cuda_available": false,
+    "cuda_device_count": 0,
+    "devices": [],
+    "nvidia_smi": "NVIDIA GeForce RTX 3050 A Laptop GPU, 4094, 610.62",
+    "torch_error": "ModuleNotFoundError(\"No module named 'torch'\")"
+  }
+}

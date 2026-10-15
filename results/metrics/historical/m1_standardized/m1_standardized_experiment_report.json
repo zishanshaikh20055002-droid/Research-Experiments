@@ -1,0 +1,111 @@
+{
+  "experiment": "M1-standardized",
+  "architecture": {
+    "encoder": "BiLSTM",
+    "input_size": 32,
+    "hidden_size": 64,
+    "num_layers": 1,
+    "bidirectional": true,
+    "head": "Linear(128->64), ReLU, Linear(64->1), Sigmoid"
+  },
+  "hyperparameters": {
+    "model": "M1",
+    "seed": 42,
+    "sequence_length": 10,
+    "stride": 1,
+    "hidden_size": 64,
+    "num_layers": 1,
+    "dropout": 0.0,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "max_epochs": 100,
+    "patience": 15,
+    "grad_clip_norm": 1.0,
+    "loss": "mse",
+    "optimizer": "adam",
+    "num_workers": 0
+  },
+  "selected_fold": "val_Bearing2_2",
+  "best_validation_loss": 0.009780887783946176,
+  "epochs_completed": 22,
+  "metrics": {
+    "mae": 0.306988443284878,
+    "rmse": 0.4012790368197732,
+    "r2": -1.0081235508286865,
+    "prediction_min": 0.017843589186668396,
+    "prediction_max": 0.9696648120880127,
+    "predictions_outside_0_1": 0,
+    "test_sequence_count": 3164
+  },
+  "prediction_bias": {
+    "mean_true_rul": 0.4880608738779827,
+    "mean_predicted_rul": 0.6803827024542982,
+    "mean_prediction_error_pred_minus_true": 0.19232182857631552,
+    "prediction_std": 0.35423187371728576
+  },
+  "scaler_audit": {
+    "scaler_fit_bearings": [
+      "Bearing1_1",
+      "Bearing1_2",
+      "Bearing2_1",
+      "Bearing3_1",
+      "Bearing3_2"
+    ],
+    "validation_bearing": "Bearing2_2",
+    "test_bearings": [
+      "Bearing1_3",
+      "Bearing1_4",
+      "Bearing1_5",
+      "Bearing2_3",
+      "Bearing2_4",
+      "Bearing2_5",
+      "Bearing3_3",
+      "Bearing3_4",
+      "Bearing3_5"
+    ],
+    "split_overlap": {
+      "train_validation_overlap": [],
+      "train_test_overlap": [],
+      "validation_test_overlap": [],
+      "disjoint": true
+    },
+    "train_scaled_mean_abs_max": 7.500140100091812e-07,
+    "train_scaled_std_min": 0.999998152256012,
+    "train_scaled_std_max": 1.0000017881393433,
+    "scaled_all_finite": true,
+    "validation_rows_used_for_scaler": 0,
+    "test_rows_used_for_scaler": 0,
+    "sequence_construction": {
+      "sequence_length": 10,
+      "stride": 1,
+      "train_sequences": 5764,
+      "validation_sequences": 152,
+      "test_sequences": 3164,
+      "target_convention": "features[t:t+10] paired with final timestep RUL[t+9]",
+      "bearing_boundary_ok": true
+    }
+  },
+  "comparison_with_m1_raw": {
+    "raw_m1_reference": {
+      "mae": 0.30699,
+      "rmse": 0.40128,
+      "r2": -1.00812
+    },
+    "m1_standardized": {
+      "mae": 0.306988443284878,
+      "rmse": 0.4012790368197732,
+      "r2": -1.0081235508286865
+    },
+    "delta_standardized_minus_raw": {
+      "mae": -1.556715121975305e-06,
+      "rmse": -9.631802267984213e-07,
+      "r2": -3.550828686638141e-06
+    }
+  },
+  "materially_helped": false,
+  "warnings": [
+    "Bearing3_4: missing numeric CSV indices [1105]; existing files are kept in numeric order.",
+    "CUDA is not available to PyTorch; M1-standardized trained on CPU.",
+    "Existing M1 trainer already used fold-training-only StandardScaler; this run is an explicitly named standardized rerun."
+  ]
+}

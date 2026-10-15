@@ -1,0 +1,43 @@
+{
+  "config": {
+    "model": "M1",
+    "seed": 42,
+    "sequence_length": 10,
+    "stride": 1,
+    "hidden_size": 64,
+    "num_layers": 1,
+    "dropout": 0.0,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "max_epochs": 100,
+    "patience": 15,
+    "grad_clip_norm": 1.0,
+    "loss": "mse",
+    "optimizer": "adam",
+    "num_workers": 0
+  },
+  "torch": {
+    "torch_version": "2.14.1+cpu",
+    "cuda_available": false,
+    "cuda_device_count": 0,
+    "devices": [],
+    "nvidia_smi": "NVIDIA GeForce RTX 3050 A Laptop GPU, 4094, 610.62"
+  },
+  "selected_fold": "val_Bearing2_2",
+  "dry_run": {
+    "input_shape": [
+      32,
+      10,
+      32
+    ],
+    "target_shape": [
+      32,
+      1
+    ],
+    "prediction_shape": [
+      32,
+      1
+    ],
+    "loss": 0.06274548918008804
+  }
+}

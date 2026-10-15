@@ -1,0 +1,79 @@
+{
+  "model": "M4",
+  "seed": 2024,
+  "best_epoch": 10,
+  "best_validation_loss": -3.472067456496389,
+  "training_time_seconds": 70.61171660000036,
+  "mae": 0.29579415845851165,
+  "rmse": 0.37434484625891173,
+  "r2": -0.7475966419781637,
+  "prediction_min": 0.013907407410442829,
+  "prediction_max": 0.9653773903846741,
+  "predictions_outside_0_1": 0,
+  "mean_prediction_bias_pred_minus_true": 0.17220763862133026,
+  "fault_accuracy": 0.16529709228824274,
+  "fault_macro_precision": 0.10488530250503242,
+  "fault_macro_recall": 0.3627985277482696,
+  "fault_macro_f1": 0.14901957054119755,
+  "fault_per_class": {
+    "Outer": {
+      "precision": 0.17946768060836502,
+      "recall": 0.7649918962722853,
+      "f1": 0.29072990452725594,
+      "support": 617
+    },
+    "Inner": {
+      "precision": 0.058823529411764705,
+      "recall": 0.011783610069630423,
+      "f1": 0.01963409192324855,
+      "support": 1867
+    },
+    "Cage": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 637
+    },
+    "Mixed": {
+      "precision": 0.18125,
+      "recall": 0.6744186046511628,
+      "f1": 0.2857142857142857,
+      "support": 43
+    }
+  },
+  "mono_violation_rate": 0.47385103011093505,
+  "mono_mean_violation_magnitude": 0.01378238948379771,
+  "mono_violating_transitions": 1495,
+  "mono_valid_adjacent_transitions": 3155,
+  "per_condition": [
+    {
+      "condition": "35Hz12kN",
+      "mae": 0.129655462366025,
+      "rmse": 0.17278013796056418,
+      "r2": 0.5872742566115408,
+      "prediction_min": 0.020970752462744713,
+      "prediction_max": 0.9059793949127197,
+      "predictions_outside_0_1": 0
+    },
+    {
+      "condition": "37.5Hz11kN",
+      "mae": 0.1601010024137564,
+      "rmse": 0.21112082714894764,
+      "r2": 0.4406049283737642,
+      "prediction_min": 0.013907407410442829,
+      "prediction_max": 0.9453482031822205,
+      "predictions_outside_0_1": 0
+    },
+    {
+      "condition": "40Hz10kN",
+      "mae": 0.3825244483773282,
+      "rmse": 0.44740838881162337,
+      "r2": -1.4568445703994275,
+      "prediction_min": 0.02882320247590542,
+      "prediction_max": 0.9653773903846741,
+      "predictions_outside_0_1": 0
+    }
+  ],
+  "s_R": -1.7794358730316162,
+  "s_F": -1.812964916229248
+}
